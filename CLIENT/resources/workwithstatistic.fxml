@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsuir.controllers.StatisticController">
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="269.0" layoutY="30.0" text="Statistic">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="54.0" text="back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="get_a_printout" layoutX="419.0" layoutY="152.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" text="Get a printout">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="path_to_catalog_area" layoutX="419.0" layoutY="103.0" prefHeight="38.0" prefWidth="114.0" />
+            <Button fx:id="get_a_salary_diagram" layoutX="110.0" layoutY="337.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="158.0" text="Get a salary diagram">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="status_area" layoutX="488.0" layoutY="200.0" prefHeight="14.0" prefWidth="90.0" />
+            <Label layoutX="443.0" layoutY="211.0" text="Status" />
+            <Label layoutX="419.0" layoutY="74.0" text="Path to catalog with printouts " />
+            <TextArea fx:id="info_about_company_area" layoutX="348.0" layoutY="258.0" prefHeight="82.0" prefWidth="222.0" />
+            <Button fx:id="get_info_about_company" layoutX="391.0" layoutY="356.0" mnemonicParsing="false" text="Get info about company">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="348.0" layoutY="239.0" text="Info about company">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="field_for_login" layoutX="113.0" layoutY="299.0" prefHeight="34.0" prefWidth="152.0" />
+            <Label layoutX="36.0" layoutY="306.0" text="your login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <LineChart fx:id="salary_diagram" layoutX="17.0" layoutY="73.0" prefHeight="194.0" prefWidth="301.0" title="Line chart">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

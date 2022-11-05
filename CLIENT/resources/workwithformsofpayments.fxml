@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsuir.controllers.WorkWithFormsOfPaymentsController">
+   <center>
+      <AnchorPane prefHeight="409.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="169.0" layoutY="27.0" text="Work with forms of payments">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Button fx:id="add_form_of_payment" layoutX="11.0" layoutY="111.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="150.0" text="Add form of payment" />
+            <TextField fx:id="title_field" layoutX="189.0" layoutY="90.0" prefHeight="26.0" prefWidth="100.0" />
+            <TextField fx:id="rate_field" layoutX="448.0" layoutY="88.0" prefHeight="26.0" prefWidth="101.0" />
+            <TextField fx:id="date_of_start_field" layoutX="308.0" layoutY="90.0" prefHeight="26.0" prefWidth="102.0" />
+            <Label layoutX="228.0" layoutY="68.0" text="title" />
+            <Label layoutX="377.0" layoutY="68.0" />
+            <Label layoutX="323.0" layoutY="68.0" text="date of start" />
+            <Label layoutX="479.0" layoutY="68.0" text="rate" />
+            <Button fx:id="update_form_of_payment" layoutX="437.0" layoutY="140.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="156.0" text="Update form of payment" />
+            <TextField fx:id="newrate_field" layoutX="189.0" layoutY="144.0" prefHeight="26.0" prefWidth="100.0" />
+            <Label layoutX="218.0" layoutY="127.0" text="newrate" />
+            <Button fx:id="go_to_work_with_salarys" layoutX="431.0" layoutY="355.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="158.0" text="Work with salarys" />
+            <Button fx:id="delete_form_of_payment" layoutX="11.0" layoutY="157.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="151.0" text="Delete form of payment" />
+            <Button fx:id="view_forms_of_payments" layoutX="7.0" layoutY="207.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="View forms of payments" />
+            <Button fx:id="make_the_form_valid" layoutX="13.0" layoutY="70.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" text="Make the form valid " />
+            <TextField fx:id="new_date_of_start_field" layoutX="308.0" layoutY="144.0" prefHeight="26.0" prefWidth="102.0" />
+            <Label layoutX="314.0" layoutY="127.0" text="new date of start" />
+            <TableView fx:id="table_for_forms_of_payments" layoutX="220.0" layoutY="200.0" prefHeight="116.0" prefWidth="314.0">
+              <columns>
+                <TableColumn fx:id="column_title" prefWidth="120.0" text="title" />
+                <TableColumn fx:id="column_dateofstart" prefWidth="88.79998779296875" text="date of start" />
+                  <TableColumn fx:id="column_rate" prefWidth="102.40008544921875" text="rate" />
+              </columns>
+            </TableView>
+            <TextArea fx:id="help_area" layoutX="6.0" layoutY="280.0" prefHeight="72.0" prefWidth="190.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="47.0" layoutY="258.0" text="HelpWindow">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="status" layoutX="291.0" layoutY="336.0" prefHeight="20.0" prefWidth="64.0" />
+            <Label layoutX="246.0" layoutY="347.0" text="Status" />
+            <Button fx:id="back" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" text="back" />
+            <Button fx:id="help" layoutX="59.0" layoutY="360.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="TakeHelp" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsuir.controllers.WorkWithSalarysOfEmployeesController">
+   <left>
+      <AnchorPane prefHeight="406.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="164.0" layoutY="26.0" text="Work with salarys of employees">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="calculate_monthratesalary" layoutX="27.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="185.0" text="Calculate the monthrate salary " />
+            <TextField fx:id="field_for_days_or_hours_actually_worked" layoutX="27.0" layoutY="90.0" prefHeight="26.0" prefWidth="168.0" />
+            <Label layoutX="14.0" layoutY="63.0" text="days actually worked/hours actually worked" />
+            <TextField fx:id="field_for_working_days_per_month" layoutX="29.0" layoutY="145.0" prefHeight="26.0" prefWidth="164.0" />
+            <Label layoutX="14.0" layoutY="127.0" text="working days per month" />
+            <TextField fx:id="field_for_date" layoutX="28.0" layoutY="194.0" prefHeight="29.0" prefWidth="166.0" />
+            <TextField fx:id="field_for_login_of_employee" layoutX="27.0" layoutY="249.0" prefHeight="26.0" prefWidth="166.0" />
+            <Label layoutX="17.0" layoutY="171.0" text="date" />
+            <Label layoutX="15.0" layoutY="224.0" text="login of employee" />
+            <Button fx:id="view_title_valid_form_of_payment" layoutX="406.0" layoutY="132.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="188.0" text="View title valid form of payment" />
+            <TextArea fx:id="title_area" layoutX="450.0" layoutY="83.0" prefHeight="39.0" prefWidth="118.0" />
+            <Button fx:id="back" layoutX="2.0" layoutY="3.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="66.0" text="back" />
+            <TableView fx:id="table_for_SalarysOfEmployee" layoutX="240.0" layoutY="182.0" prefHeight="159.0" prefWidth="291.0">
+              <columns>
+                <TableColumn fx:id="column_summa" prefWidth="161.60003662109375" text="summa" />
+                  <TableColumn fx:id="column_date" prefWidth="127.99998779296874" text="date" />
+              </columns>
+            </TableView>
+            <Button fx:id="view_salarys_of_employee" layoutX="311.0" layoutY="360.0" mnemonicParsing="false" text="View salarys of employee" />
+            <TextArea fx:id="summa_area" layoutX="290.0" layoutY="83.0" prefHeight="32.0" prefWidth="94.0" />
+            <Label layoutX="245.0" layoutY="95.0" text="summa" />
+            <Button fx:id="calculate_dailyratesalary" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="188.0" text="Calculate the dailyrate salary" />
+            <Button fx:id="calculate_hourlyratesalary" layoutX="24.0" layoutY="360.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="190.0" text="Calculate the hourlyrate salary" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsuir.controllers.WorkWithEmployeesController">
+   <center>
+      <AnchorPane prefHeight="410.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="214.0" layoutY="14.0" text="Work with employees">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="add_new_employee" layoutX="5.0" layoutY="69.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="143.0" text="Add new employee">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete_employee" layoutX="5.0" layoutY="109.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="144.0" text="Delete employee">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="login_field" layoutX="311.0" layoutY="71.0" prefHeight="26.0" prefWidth="74.0" />
+            <TextField fx:id="password_field" layoutX="311.0" layoutY="111.0" prefHeight="26.0" prefWidth="76.0" />
+            <Label layoutX="227.0" layoutY="115.0" text="password:" />
+            <Label layoutX="227.0" layoutY="76.0" text="login:" />
+            <Button fx:id="update_employee" layoutX="7.0" layoutY="156.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="144.0" text="Update employee">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="newpassword_field" layoutX="310.0" layoutY="149.0" prefHeight="27.0" prefWidth="80.0" />
+            <Label layoutX="228.0" layoutY="154.0" text="newpassword:" />
+            <Button fx:id="view_employees" layoutX="7.0" layoutY="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="144.0" text="View employees">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="go_to_work_with_forms_of_payments" layoutX="15.0" layoutY="332.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" text="Work with forms of payments" />
+            <TextArea fx:id="status_area" layoutX="474.0" layoutY="95.0" prefHeight="26.0" prefWidth="76.0" />
+            <Label layoutX="462.0" layoutY="76.0" text="status of operation" />
+            <TableView fx:id="table_for_employees" layoutX="228.0" layoutY="215.0" prefHeight="160.0" prefWidth="333.0">
+              <columns>
+                <TableColumn fx:id="column_login" prefWidth="179.20001220703125" text="login" />
+                <TableColumn fx:id="column_password" prefWidth="151.19998168945312" text="password" />
+              </columns>
+            </TableView>
+            <Button fx:id="back" layoutX="5.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="71.0" text="back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
